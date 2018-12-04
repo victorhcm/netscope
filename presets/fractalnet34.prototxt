@@ -161,10 +161,11 @@ layer {
 }
 layer {
   name: "join_conv2_1_plus"
-  type: "Concat"
+  type: "Eltwise"
   bottom: "conv1_0"
   bottom: "conv2_1"
   top: "conv2_1_plus"
+  operation: "SUM"  
   fractal_join_param {
     drop_path_ratio: 0.15
   }
@@ -408,11 +409,12 @@ layer {
 }
 layer {
   name: "join_pool2_3_plus"
-  type: "Concat"
+  type: "Eltwise"
   bottom: "pool0_0"
   bottom: "pool1_1"
   bottom: "pool2_3"
   top: "pool2_3_plus"
+  operation: "SUM"  
   fractal_join_param {
     drop_path_ratio: 0.15
   }
@@ -573,10 +575,11 @@ layer {
 }
 layer {
   name: "join_conv2_5_plus"
-  type: "Concat"
+  type: "Eltwise"
   bottom: "conv1_2"
   bottom: "conv2_5"
   top: "conv2_5_plus"
+  operation: "SUM"
   fractal_join_param {
     drop_path_ratio: 0.15
   }
@@ -820,11 +823,12 @@ layer {
 }
 layer {
   name: "join_pool2_7_plus"
-  type: "Concat"
+  type: "Eltwise"
   bottom: "pool0_1"
   bottom: "pool1_3"
   bottom: "pool2_7"
   top: "pool2_7_plus"
+  operation: "SUM"
   fractal_join_param {
     drop_path_ratio: 0.15
   }
@@ -985,10 +989,11 @@ layer {
 }
 layer {
   name: "join_conv2_9_plus"
-  type: "Concat"
+  type: "Eltwise"
   bottom: "conv1_4"
   bottom: "conv2_9"
   top: "conv2_9_plus"
+  operation: "SUM"
   fractal_join_param {
     drop_path_ratio: 0.15
   }
@@ -1232,11 +1237,12 @@ layer {
 }
 layer {
   name: "join_pool2_11_plus"
-  type: "Concat"
+  type: "Eltwise"
   bottom: "pool0_2"
   bottom: "pool1_5"
   bottom: "pool2_11"
   top: "pool2_11_plus"
+  operation: "SUM"
   fractal_join_param {
     drop_path_ratio: 0.15
   }
@@ -1397,10 +1403,11 @@ layer {
 }
 layer {
   name: "join_conv2_13_plus"
-  type: "Concat"
+  type: "Eltwise"
   bottom: "conv1_6"
   bottom: "conv2_13"
   top: "conv2_13_plus"
+  operation: "SUM"
   fractal_join_param {
     drop_path_ratio: 0.15
   }
@@ -1644,11 +1651,12 @@ layer {
 }
 layer {
   name: "join_pool2_15_plus"
-  type: "Concat"
+  type: "Eltwise"
   bottom: "pool0_3"
   bottom: "pool1_7"
   bottom: "pool2_15"
   top: "pool2_15_plus"
+  operation: "SUM"
   fractal_join_param {
     drop_path_ratio: 0.15
   }
@@ -1809,10 +1817,11 @@ layer {
 }
 layer {
   name: "join_conv2_17_plus"
-  type: "Concat"
+  type: "Eltwise"
   bottom: "conv1_8"
   bottom: "conv2_17"
   top: "conv2_17_plus"
+  operation: "SUM"  
   fractal_join_param {
     drop_path_ratio: 0.15
   }
@@ -2056,11 +2065,12 @@ layer {
 }
 layer {
   name: "join_pool2_19_plus"
-  type: "Concat"
+  type: "Eltwise"
   bottom: "pool0_4"
   bottom: "pool1_9"
   bottom: "pool2_19"
   top: "pool2_19_plus"
+  operation: "SUM"
   fractal_join_param {
     drop_path_ratio: 0.15
   }
